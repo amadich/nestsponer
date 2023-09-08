@@ -18,7 +18,7 @@ async function bootstrap() {
             return new filter_validation_1.ValidationException(errMsg);
         },
     }));
-    const PORT = process.env.PORT;
+    const PORT = process.env.PORT || 3000;
     await app.listen(PORT);
 }
 bootstrap();
